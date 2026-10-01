@@ -1,0 +1,77 @@
+.calendar-page {}
+
+.page-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #e8e8f0;
+  margin-bottom: 0.25rem;
+}
+
+.cal-subtitle {
+  color: #666;
+  font-size: 0.88rem;
+  margin-bottom: 1.5rem;
+}
+
+.cal-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .cal-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cal-sidebar {}
+
+.cal-events {}
+
+.cal-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #555;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #1a1a2e;
+  border: 1px dashed #2a2a42;
+  border-radius: 14px;
+}
+
+.cal-empty span { font-size: 2rem; }
+.cal-empty p { font-size: 0.95rem; }
+
+.cal-loading {
+  color: #666;
+  text-align: center;
+  padding: 2rem;
+}
+
+.day-events-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #a78bfa;
+  margin-bottom: 1rem;
+}
+
+.day-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.error-msg {
+  background: #2d1a1a;
+  border: 1px solid #7f1d1d;
+  color: #fca5a5;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
