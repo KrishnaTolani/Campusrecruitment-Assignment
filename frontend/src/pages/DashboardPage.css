@@ -1,0 +1,271 @@
+.dashboard-page {}
+
+.dash-header {
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #e8e8f0;
+}
+
+.dash-subtitle {
+  color: #666;
+  font-size: 0.88rem;
+  margin-top: 0.25rem;
+}
+
+.dash-stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.dash-stat {
+  background: #1a1a2e;
+  border: 1px solid #2a2a42;
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #9999b3;
+}
+
+.dash-stat strong {
+  color: #a78bfa;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.dash-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9999b3;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.rsvp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.rsvp-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a42;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.rsvp-card:hover {
+  transform: translateY(-2px);
+  border-color: #4a4a7a;
+}
+
+.rsvp-card-img {
+  height: 120px;
+  background: linear-gradient(135deg, #1e1b4b, #312e81);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.rsvp-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rsvp-card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rsvp-event-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #e8e8f0;
+}
+
+.rsvp-meta {
+  font-size: 0.8rem;
+  color: #8888aa;
+}
+
+.rsvp-friends-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #a78bfa;
+  background: #1e1b4b;
+  padding: 3px 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.rsvp-card-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+}
+
+.btn-cancel-rsvp {
+  padding: 0.4rem 0.75rem;
+  background: none;
+  border: 1.5px solid #7f1d1d;
+  color: #f87171;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-cancel-rsvp:hover {
+  background: #7f1d1d;
+  color: #fff;
+}
+
+.btn-share-dash {
+  padding: 0.4rem 0.75rem;
+  background: none;
+  border: 1.5px solid #0ea5e9;
+  color: #38bdf8;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-share-dash:hover {
+  background: #0ea5e9;
+  color: #fff;
+}
+
+.btn-details-dash {
+  padding: 0.4rem 0.75rem;
+  background: none;
+  border: 1.5px solid #334155;
+  color: #94a3b8;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-details-dash:hover {
+  background: #334155;
+  color: #e8e8f0;
+}
+
+.empty-dashboard {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #555;
+}
+
+.empty-dashboard .empty-icon { font-size: 3rem; margin-bottom: 1rem; }
+.empty-dashboard h3 { color: #9999b3; font-size: 1rem; margin-bottom: 0.5rem; }
+.empty-dashboard p { font-size: 0.88rem; }
+.empty-dashboard a { color: #a78bfa; }
+
+.reminder-section {
+  margin-top: 2.5rem;
+  background: #1a1a2e;
+  border: 1px solid #2a2a42;
+  border-radius: 14px;
+  padding: 1.25rem;
+  max-width: 420px;
+}
+
+.reminder-section h2 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e8e8f0;
+  margin-bottom: 1rem;
+}
+
+.reminder-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.reminder-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.reminder-label {
+  font-size: 0.85rem;
+  color: #9999b3;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 22px;
+}
+
+.toggle input { opacity: 0; width: 0; height: 0; }
+
+.toggle-slider {
+  position: absolute;
+  inset: 0;
+  background: #2a2a42;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.toggle-slider::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 3px;
+  top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.toggle input:checked + .toggle-slider { background: #7c3aed; }
+.toggle input:checked + .toggle-slider::before { transform: translateX(18px); }
+
+.reminder-select {
+  background: #0f0f20;
+  border: 1px solid #3a3a5a;
+  color: #e8e8f0;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+}
+
+.save-reminder-btn {
+  padding: 0.5rem 1rem;
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.save-reminder-btn:hover { background: #6d28d9; }
+.save-reminder-btn.saved { background: #059669; }
